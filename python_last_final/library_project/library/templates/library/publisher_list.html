@@ -1,0 +1,17 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Publisher List</title>
+</head>
+<body>
+    <h1>Publisher List</h1>
+    <ul>
+        {% for publisher in publishers %}
+            <li>{{ publisher.name }}</li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'publisher-create' %}">Add New Publisher</a>
+</body>
+</html>
